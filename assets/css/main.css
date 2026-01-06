@@ -1527,3 +1527,8 @@ section,
 .project-card:hover {
   transform: translateY(-5px);
 }
+html, body {
+  overflow-x: hidden; /* This hides the horizontal scrollbar specifically */
+  width: 100%;
+  position: relative;
+}
