@@ -289,33 +289,40 @@
       </div>
 
       <script>
-        function handleDownload(event) {
+        async function handleDownload(event) {
           event.preventDefault();
 
-          const userChoice = confirm("Do you want to download the CV?");
+          if (confirm("Do you want to download the CV?")) {
+            const fileUrl = "AmanathCV.pdf";
+            const fileName = "Amanath_CV.pdf";
 
-          if (userChoice) {
-            const fileUrl = "AmanathCV.pdf"; // Path to your file
+            try {
+              // 1. Fetch the file data
+              const response = await fetch(fileUrl);
+              const blob = await response.blob();
 
-            // 1. Create a hidden link to FORCE the "Save" action
-            const saveLink = document.createElement('a');
-            saveLink.href = fileUrl;
-            saveLink.download = "AmanathCV.pdf"; // This forces the "Save As" behavior
-            document.body.appendChild(saveLink);
+              // 2. Create a local URL for the data
+              const url = window.URL.createObjectURL(blob);
 
-            // 2. Click the hidden link to start the download
-            saveLink.click();
+              // 3. Create a hidden link and force the download
+              const link = document.createElement('a');
+              link.href = url;
+              link.setAttribute('download', fileName); // Force the filename
+              document.body.appendChild(link);
+              link.click();
 
-            // 3. Remove the link from the page
-            document.body.removeChild(saveLink);
+              // 4. Cleanup and Open in new window
+              document.body.removeChild(link);
+              window.URL.revokeObjectURL(url); // Free up memory
 
-            // 4. Wait a tiny bit, then open the file for viewing
-            setTimeout(() => {
+              // Open the viewer window
               window.open(fileUrl, '_blank');
-            }, 500); // 500ms delay helps avoid browser "multi-action" blocks
 
-          } else {
-            console.log("Download cancelled.");
+            } catch (error) {
+              console.error("Download failed:", error);
+              // Fallback if fetch fails (e.g. if file is missing)
+              window.open(fileUrl, '_blank');
+            }
           }
         }
       </script>
