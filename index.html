@@ -290,29 +290,32 @@
 
       <script>
         function handleDownload(event) {
-          // 1. Stop the default link behavior initially
           event.preventDefault();
 
-          // 2. Show the "Yes/No" (OK/Cancel) box
           const userChoice = confirm("Do you want to download the CV?");
 
           if (userChoice) {
-            // ACTION: YES (User clicked OK)
-            const fileUrl = event.currentTarget.href;
+            const fileUrl = "AmanathCV.pdf"; // Path to your file
 
-            // 3. Trigger the Download
-            const link = document.createElement('a');
-            link.href = fileUrl;
-            link.download = "AmanathCV.pdf";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            // 1. Create a hidden link to FORCE the "Save" action
+            const saveLink = document.createElement('a');
+            saveLink.href = fileUrl;
+            saveLink.download = "AmanathCV.pdf"; // This forces the "Save As" behavior
+            document.body.appendChild(saveLink);
 
-            // 4. Open the file in a new window/tab
-            window.open(fileUrl, '_blank');
+            // 2. Click the hidden link to start the download
+            saveLink.click();
+
+            // 3. Remove the link from the page
+            document.body.removeChild(saveLink);
+
+            // 4. Wait a tiny bit, then open the file for viewing
+            setTimeout(() => {
+              window.open(fileUrl, '_blank');
+            }, 500); // 500ms delay helps avoid browser "multi-action" blocks
+
           } else {
-            // ACTION: NO (User clicked Cancel)
-            console.log("Download cancelled by user.");
+            console.log("Download cancelled.");
           }
         }
       </script>
