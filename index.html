@@ -292,36 +292,48 @@
         async function handleDownload(event) {
           event.preventDefault();
 
-          if (confirm("Do you want to download the CV?")) {
+          // 1. Ask for confirmation first
+          if (confirm("Do you want to download and save the CV?")) {
             const fileUrl = "AmanathCV.pdf";
-            const fileName = "Amanath_CV.pdf";
 
             try {
-              // 1. Fetch the file data
+              // 2. Fetch the file data
               const response = await fetch(fileUrl);
               const blob = await response.blob();
 
-              // 2. Create a local URL for the data
-              const url = window.URL.createObjectURL(blob);
+              // 3. Check if the browser supports the 'showSaveFilePicker' (Modern Laptops)
+              if ('showSaveFilePicker' in window) {
+                const opts = {
+                  suggestedName: 'Amanath_CV.pdf',
+                  types: [{
+                    description: 'PDF Document',
+                    accept: { 'application/pdf': ['.pdf'] },
+                  }],
+                };
 
-              // 3. Create a hidden link and force the download
-              const link = document.createElement('a');
-              link.href = url;
-              link.setAttribute('download', fileName); // Force the filename
-              document.body.appendChild(link);
-              link.click();
+                // This line opens the "Save As" window on your lap
+                const handle = await window.showSaveFilePicker(opts);
+                const writable = await handle.createWritable();
+                await writable.write(blob);
+                await writable.close();
 
-              // 4. Cleanup and Open in new window
-              document.body.removeChild(link);
-              window.URL.revokeObjectURL(url); // Free up memory
-
-              // Open the viewer window
-              window.open(fileUrl, '_blank');
-
-            } catch (error) {
-              console.error("Download failed:", error);
-              // Fallback if fetch fails (e.g. if file is missing)
-              window.open(fileUrl, '_blank');
+                // 4. Open the viewer after saving is done
+                window.open(fileUrl, '_blank');
+              } else {
+                // Fallback for older browsers
+                const url = window.URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = "Amanath_CV.pdf";
+                link.click();
+                window.open(fileUrl, '_blank');
+              }
+            } catch (err) {
+              if (err.name !== 'AbortError') {
+                console.error("Save failed:", err);
+                // Last resort: just open it
+                window.open(fileUrl, '_blank');
+              }
             }
           }
         }
