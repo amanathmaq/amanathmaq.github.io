@@ -1,691 +1,2458 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Amanath Maqsood - Full Stack Software Engineering Intern"
+    />
+    <title>Amanath Maqsood | Portfolio</title>
+    <link href="images/a_logo.png" rel="icon" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Amanath | Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Favicons -->
-   
-  <link href="assets/img/mypic.png" rel="icon">
-  <link href="assets/img/shaking_hands.png" rel="apple-touch-icon">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Background Particles -->
+    <div class="bg-particles" id="particles"></div>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Glow Orbs -->
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Navigation -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">&lt;AMANATH_MAQ&gt;</a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            ☰
+          </button>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-lg-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <!-- <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li> -->
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
+    <!-- ... (Head and Header remain the same) ... -->
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/bg.png" alt="">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h2>Amanath Maqsood</h2>
-            <p>I'm a <span class="typed" data-typed-items="Developer, Software Engineer">Software
-                Engineer</span>
-              <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
-            </p>
-            <div class="social-links">
-              <!-- https://www.facebook.com/amanath.maq/ -->
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <!-- https://www.instagram.com/a_m_a_n_a_t_h_maq/ -->
-              <a href="#"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/amanathmaqsood/"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section pt-5 pb-3">
-
-      <!-- Section Title -->
-      <div class="container section-title pb-3" data-aos="fade-up">
-        <h2>About</h2>
-        <p>
-          <b class="text-success">Mohamed Maqsood Amanath</b> following a <b class="text-primary">B.Eng (Hons) in Software
-            Engineering</b> from
-          <b>IIC University - UGC recognized</b>, and is actively pursuing an entry-level role
-          in <b>Full Stack Development</b>. He applies strong academic knowledge of both
-          front-end and back-end principles to build efficient and scalable applications.
-          Dedicated to professional growth, he is ready to translate technical excellence
-          into impactful business solutions.
-        </p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/mypic.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content mt-lg-auto mb-lg-auto">
-            <h2>Full Stack Software Engineer.</h2>
-            <p class="fst-italic py-3">
-              B.Eng. (Hons) graduate with expertise in end-to-end development, specializing in high-performance,
-              user-centric applications and modern architectural principles for scalable and maintainable solutions.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>17 June 2001</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+94 76 2383114</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Colombo, SL</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Studentship Reference No:</strong> <span>10126BB6E785DD46</span> -->
-
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B Eng (Hon's) Software Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>amanathmaq@gmail.com</span>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Internship Reference No:</strong> <span>97E3EC68B7012610</span> -->
-
-                  </li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section pt-5 pb-3">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-6 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section pt-5 pb-3">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title text-center">
-          <h2>Technical Expertise</h2>
-          <p>My technical foundation is based on the
-            principles of engineering excellence and architectural integrity. I specialize in creating full-cycle
-            software solutions that seamlessly integrate user-friendly front-end experiences with high-performance,
-            secure back-end systems. I ensure that every product is built for scalability, dependability, and long-term
-            maintainability by utilizing a modern technology stack and disciplined Dev-Ops methodologies.</p>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-          <div class="col-12">
-            <h3 class="skill-group-title">Front-End Development</h3>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fab fa-html5" style="color: #e34c26;"></i>
-              <span>HTML5</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fab fa-css3-alt" style="color: #264de4;"></i>
-              <span>CSS3</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fab fa-js" style="color: #f7df1e;"></i>
-              <span>JavaScript</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fas fa-code" style="color: #0769ad;"></i>
-              <span>jQuery</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fab fa-react" style="color: #61DAFB;"></i>
-              <span>React</span>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <h3 class="skill-group-title">Back-End Development</h3>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fab fa-java" style="color: #007396;"></i>
-              <span>Java</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fab fa-php" style="color: #777bb4;"></i>
-              <span>PHP</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fab fa-python" style="color: #3776ab;"></i>
-              <span>Python</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fas fa-hashtag" style="color: #239120;"></i>
-              <span>C#</span>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <h3 class="skill-group-title">Databases & Tools</h3>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fas fa-database" style="color: #4479a1;"></i>
-              <span>MySQL</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fas fa-leaf" style="color: #47a248;"></i>
-              <span>MongoDB</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fab fa-github" style="color: #181717;"></i>
-              <span>GitHub</span>
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <div class="big-icon-box">
-              <i class="fas fa-laptop-code" style="color: #007acc;"></i>
-              <span>VS Code</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-    </section>
-    <!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <!-- <section id="resume" class="resume section pt-5 pb-3"> -->
-
-      <!-- Section Title -->
-      <!-- <div class="container section-title pb-3" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>My career trajectory as a Full Stack Software Engineer is marked by continuous growth and the successful
-          delivery of complex projects across various domains. The following section details my professional experience,
-          educational background, and core technical contributions, showcasing a commitment to engineering excellence
-          and problem-solving.</p>
-      </div> -->
-      <!-- End Section Title -->
-
-      <!-- <div class="container text-center mt-4">
-        <a href="AmanathCV.pdf" class="btn btn-primary btn-lg" id="downloadBtn" onclick="handleDownload(event)">
-          <i class="bi bi-download"></i> My CV | Amanath
-        </a>
-      </div>
-
-      <script>
-        async function handleDownload(event) {
-          event.preventDefault(); -->
-
-          <!-- // 1. Ask for confirmation first
-          if (confirm("Do you want to download and save the CV?")) {
-            const fileUrl = "AmanathCV.pdf";
-
-            try {
-              // 2. Fetch the file data
-              const response = await fetch(fileUrl);
-              const blob = await response.blob();
-
-              // 3. Check if the browser supports the 'showSaveFilePicker' (Modern Laptops)
-              if ('showSaveFilePicker' in window) {
-                const opts = {
-                  suggestedName: 'Amanath_CV.pdf',
-                  types: [{
-                    description: 'PDF Document',
-                    accept: { 'application/pdf': ['.pdf'] },
-                  }],
-                };
-
-                // This line opens the "Save As" window on your lap
-                const handle = await window.showSaveFilePicker(opts);
-                const writable = await handle.createWritable();
-                await writable.write(blob);
-                await writable.close();
-
-                // 4. Open the viewer after saving is done
-                window.open(fileUrl, '_blank');
-              } else {
-                // Fallback for older browsers
-                const url = window.URL.createObjectURL(blob);
-                const link = document.createElement('a');
-                link.href = url;
-                link.download = "Amanath_CV.pdf";
-                link.click();
-                window.open(fileUrl, '_blank');
+    <section id="hero">
+      <div class="container hero-content">
+        <h1>
+          <style>
+            .glitch-text {
+              position: relative;
+              color: #fff;
+              font-weight: 900;
+            }
+            .glitch-text::before,
+            .glitch-text::after {
+              content: attr(data-text);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #050505; /* Match your bg */
+            }
+            .glitch-text::before {
+              left: 2px;
+              text-shadow: -1px 0 #ff00c1;
+              clip: rect(44px, 450px, 56px, 0);
+              animation: glitch-anim 5s infinite linear alternate-reverse;
+            }
+            .glitch-text::after {
+              left: -2px;
+              text-shadow: -1px 0 #00fff9;
+              clip: rect(44px, 450px, 56px, 0);
+              animation: glitch-anim2 5s infinite linear alternate-reverse;
+            }
+            @keyframes glitch-anim {
+              0% {
+                clip: rect(31px, 9999px, 94px, 0);
               }
-            } catch (err) {
-              if (err.name !== 'AbortError') {
-                console.error("Save failed:", err);
-                // Last resort: just open it
-                window.open(fileUrl, '_blank');
+              20% {
+                clip: rect(6px, 9999px, 83px, 0);
+              }
+              40% {
+                clip: rect(22px, 9999px, 6px, 0);
+              }
+              60% {
+                clip: rect(88px, 9999px, 19px, 0);
+              }
+              80% {
+                clip: rect(12px, 9999px, 64px, 0);
+              }
+              100% {
+                clip: rect(59px, 9999px, 33px, 0);
               }
             }
+            @keyframes glitch-anim2 {
+              0% {
+                clip: rect(65px, 9999px, 100px, 0);
+              }
+              20% {
+                clip: rect(2px, 9999px, 64px, 0);
+              }
+              40% {
+                clip: rect(38px, 9999px, 15px, 0);
+              }
+              60% {
+                clip: rect(92px, 9999px, 4px, 0);
+              }
+              80% {
+                clip: rect(19px, 9999px, 88px, 0);
+              }
+              100% {
+                clip: rect(4px, 9999px, 56px, 0);
+              }
+            }
+          </style>
+
+          <!-- Usage -->
+          <h1 class="glitch-text" data-text="AMANATH MAQSOOD">
+            AMANATH MAQSOOD
+          </h1>
+          Amanath Maqsood<br />
+        </h1>
+        <h2>Full Stack Developer</h2>
+        <!-- Short & Punchy Subtext -->
+        <p class="hero-subtext">
+          B.Eng (Hons) Student at JIAT. Passionate about building web
+          applications, learning modern technologies, and turning academic
+          concepts into functional solutions.
+        </p>
+
+        <div class="typewriter-container" aria-live="polite">
+          <span class="typewriter-text" id="typewriter-text"></span
+          ><span class="cursor"></span>
+        </div>
+
+        <div class="cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+              ></path>
+            </svg>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Contact Me
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M12 5v14M19 12l-7 7-7-7" />
+        </svg>
+      </div>
+
+      <!-- ✅ CONTINUOUS NEON OUTLINE TEXT ANIMATION -->
+      <div class="marquee-container">
+        <style>
+          .marquee-container {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            pointer-events: none;
+            /* Fade edges for smooth look */
+            mask-image: linear-gradient(
+              to right,
+              transparent,
+              black 5%,
+              black 95%,
+              transparent
+            );
+            -webkit-mask-image: linear-gradient(
+              to right,
+              transparent,
+              black 5%,
+              black 95%,
+              transparent
+            );
+            z-index: 1;
           }
-        }
-      </script>
-    </section> -->
-    <!-- /Resume Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="projects section pt-5 pb-3">
+          .marquee-track {
+            display: inline-block;
+            animation: marquee-scroll 25s linear infinite;
+          }
 
-      <div class="container section-title text-center pb-3" data-aos="fade-up">
-        <h2>My Projects</h2>
-        <p class="lead text-muted">Explore a selection of my latest Full Stack university projects, demonstrating my
-          expertise in
-          development, design, and deployment. Each project highlights a unique challenge and solution.</p>
+          .marquee-text {
+            font-size: clamp(2.5rem, 6vw, 5rem); /* Large responsive font */
+            font-weight: 900; /* Extra Bold */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding-right: 3rem;
+            font-family: var(--font-main, sans-serif);
+
+            /* --- NEON OUTLINE STYLING --- */
+            color: rgba(
+              5,
+              5,
+              5,
+              0.8
+            ); /* Dark inner fill (so it contrasts with bg) */
+            -webkit-text-stroke: 1px rgba(0, 255, 65, 0.6); /* Light Neon Green Outline */
+            text-shadow: 0 0 10px rgba(0, 255, 65, 0.3); /* Very faint green glow */
+
+            /* Alternative: If you want transparent inside with ONLY outline, use: */
+            /* color: transparent; */
+          }
+
+          @keyframes marquee-scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+        </style>
+
+        <div class="marquee-track">
+          <!-- Set 1 -->
+          <div class="marquee-text">
+            AMANATH MAQSOOD &nbsp; • &nbsp; FULL STACK DEVELOPER &nbsp; • &nbsp;
+            SOFTWARE ENGINEERING INTERN &nbsp; • &nbsp; AMANATH MAQSOOD &nbsp; •
+            &nbsp; FULL STACK DEVELOPER &nbsp; • &nbsp; SOFTWARE ENGINEERING
+            INTERN &nbsp; • &nbsp;
+          </div>
+        </div>
       </div>
+      <!-- ✅ END ANIMATION -->
+    </section>
 
+    <!-- About Section -->
+    <section id="about">
       <div class="container">
-        <div class="row gy-4 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="fade-in">About Me</h2>
+        <div class="about-grid">
+          <div
+            class="about-text glass-panel slide-in-left"
+            style="padding: 2.5rem"
+          >
+            <!-- OPTION 1 USED HERE (Detailed & Professional for About) -->
+            <!-- Changed to First Person "I" for better connection -->
+            <p>
+              I am
+              <b style="color: rgb(0, 255, 128)">Mohamed Maqsood Amanath</b>,
+              currently following a
+              <b style="color: rgb(0, 255, 251)"
+                >B.Eng (Hons) in Software Engineering</b
+              >
+              from IIC University (UGC recognized). I am actively pursuing an
+              entry-level role in Full Stack Development.
+            </p>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card shadow-sm h-100 project-card border-0">
-              <img src="assets/img/textile_shop.png" class="card-img-top" alt="Textile Shop">
-              <div class="card-body p-2 p-md-3">
-                <h5 class="card-title text-primary mb-1">Textile Shop System</h5>
-                <p class="card-text small text-muted">Website management system built with <b>Java</b>.</p>
+            <p>
+              I apply strong academic knowledge of both front-end and back-end
+              principles to build efficient and scalable applications. Dedicated
+              to professional growth, I am ready to translate technical
+              excellence into impactful business solutions.
+            </p>
+          </div>
+
+          <div
+            class="about-skills glass-panel slide-in-right"
+            style="padding: 2.5rem"
+          >
+            <h3
+              style="
+                margin-bottom: 1.5rem;
+                color: #fff;
+                font-family: var(--font-mono);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              "
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="var(--accent-cyan)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                ></path>
+              </svg>
+              Tech Stack
+            </h3>
+
+            <!-- Frontend Group -->
+            <div style="margin-bottom: 1.5rem">
+              <h4
+                style="
+                  font-size: 0.85rem;
+                  color: var(--accent-purple);
+                  font-family: var(--font-mono);
+                  margin-bottom: 0.8rem;
+                  text-transform: uppercase;
+                  letter-spacing: 1px;
+                "
+              >
+                Frontend Development
+              </h4>
+              <div class="tech-stack">
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #61dafb;
+                    color: #61dafb;
+                    background: rgba(97, 218, 251, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0L2.4 5.5v11L12 22l9.6-5.5v-11L12 0zm0 2.2l7.4 4.3-7.4 4.3-7.4-4.3L12 2.2zm-8.4 5.3l7.4 4.3v8.6l-7.4-4.3V7.5zm16.8 0v8.6l-7.4 4.3v-8.6l7.4-4.3z"
+                    />
+                  </svg>
+                  React.js
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #61dafb;
+                    color: #61dafb;
+                    background: rgba(97, 218, 251, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  React Native
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #e34f26;
+                    color: #e34f26;
+                    background: rgba(227, 79, 38, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M1.5 0h9v3h-6v6h6v3h-9V0zm10.5 0h9v9h-3V3h-6V0zm-9 12h9v3h-6v6h6v3h-9v-12zm10.5 0h9v12h-9v-3h6v-6h-6v-3z"
+                    />
+                  </svg>
+                  HTML5 & CSS3
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #264de4;
+                    color: #264de4;
+                    background: rgba(38, 77, 228, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0L1.5 6.5l1.5 13L12 24l9-4.5 1.5-13L12 0zm0 21.5L4.5 18 3 6.5 12 2l9 4.5-1.5 11.5L12 21.5z"
+                    />
+                  </svg>
+                  JavaScript
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #3178c6;
+                    color: #3178c6;
+                    background: rgba(49, 120, 198, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  TypeScript
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #563d7c;
+                    color: #563d7c;
+                    background: rgba(86, 61, 124, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0L1.5 6.5l1.5 13L12 24l9-4.5 1.5-13L12 0zm0 21.5L4.5 18 3 6.5 12 2l9 4.5-1.5 11.5L12 21.5z"
+                    />
+                  </svg>
+                  Bootstrap
+                </span>
+              </div>
+            </div>
+
+            <!-- Backend Group -->
+            <div style="margin-bottom: 1.5rem">
+              <h4
+                style="
+                  font-size: 0.85rem;
+                  color: var(--accent-green);
+                  font-family: var(--font-mono);
+                  margin-bottom: 0.8rem;
+                  text-transform: uppercase;
+                  letter-spacing: 1px;
+                "
+              >
+                Backend & Languages
+              </h4>
+              <div class="tech-stack">
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #68a063;
+                    color: #68a063;
+                    background: rgba(104, 160, 99, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  Node.js
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #3776ab;
+                    color: #3776ab;
+                    background: rgba(55, 118, 171, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  Python
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #ed8b00;
+                    color: #ed8b00;
+                    background: rgba(237, 139, 0, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  Java
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #777bb4;
+                    color: #777bb4;
+                    background: rgba(119, 123, 180, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  PHP
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #fff;
+                    color: #fff;
+                    background: rgba(255, 255, 255, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  REST APIs
+                </span>
+              </div>
+            </div>
+
+            <!-- Database & Tools Group -->
+            <div>
+              <h4
+                style="
+                  font-size: 0.85rem;
+                  color: var(--accent-orange);
+                  font-family: var(--font-mono);
+                  margin-bottom: 0.8rem;
+                  text-transform: uppercase;
+                  letter-spacing: 1px;
+                "
+              >
+                Database & Tools
+              </h4>
+              <div class="tech-stack">
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #00758f;
+                    color: #00758f;
+                    background: rgba(0, 117, 143, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  MongoDB
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #4479a1;
+                    color: #4479a1;
+                    background: rgba(68, 121, 161, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  MySQL
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #f05032;
+                    color: #f05032;
+                    background: rgba(240, 80, 50, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  Git & GitHub
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #000;
+                    color: #fff;
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid #333;
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    style="margin-right: 6px"
+                  >
+                    <rect
+                      x="4"
+                      y="4"
+                      width="16"
+                      height="16"
+                      rx="2"
+                      ry="2"
+                    ></rect>
+                    <line x1="8" y1="4" x2="8" y2="20"></line>
+                    <line x1="16" y1="4" x2="16" y2="20"></line>
+                  </svg>
+                  VS Code
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #00adb5;
+                    color: #00adb5;
+                    background: rgba(0, 173, 181, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  Expo
+                </span>
+                <span
+                  class="tech-badge"
+                  style="
+                    border-color: #3ddc84;
+                    color: #3ddc84;
+                    background: rgba(61, 220, 132, 0.1);
+                  "
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style="margin-right: 6px"
+                  >
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-16h2v6h-2V6zm0 8h2v2h-2v-2z"
+                    />
+                  </svg>
+                  Android Studio
+                </span>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card shadow-sm h-100 project-card border-0">
-              <img src="assets/img/eshop.png" class="card-img-top" alt="eShop">
-              <div class="card-body p-2 p-md-3">
-                <h5 class="card-title text-primary mb-1">eShop Web</h5>
-                <p class="card-text small text-muted">Full e-commerce platform using <b>PHP, HTML & Bootstrap</b>.</p>
-              </div>
+    <!-- Profile Details Section -->
+    <section id="profile-details" style="padding: 4rem 0">
+      <div class="container">
+        <div
+          class="profile-card glass-panel fade-in"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+          "
+        >
+          <!-- Left Side: Profile Image -->
+          <div
+            class="profile-image-container"
+            style="
+              flex: 1;
+              min-width: 300px;
+              height: 400px;
+              position: relative;
+              background: rgba(0, 0, 0, 0.3);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+            "
+          >
+            <!-- Animated Glow Background -->
+            <div
+              style="
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background: var(--gradient-primary);
+                filter: blur(60px);
+                opacity: 0.6;
+                animation: pulse 3s infinite;
+              "
+            ></div>
+
+            <img
+              src="images/perfect1.png"
+              alt="Amanath Maqsood"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                position: relative;
+                z-index: 2;
+                border-right: 1px solid var(--glass-border);
+              "
+              onerror="
+                this.src =
+                  'https://via.placeholder.com/400x500/1a1a1a/FFF?text=Your+Photo'
+              "
+            />
+
+            <!-- Decorative Badge -->
+            <div
+              style="
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                z-index: 3;
+                background: rgba(5, 5, 5, 0.8);
+                backdrop-filter: blur(5px);
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
+                border: 1px solid var(--accent-green);
+                color: var(--accent-green);
+                font-family: var(--font-mono);
+                font-size: 0.8rem;
+                font-weight: bold;
+                box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+              "
+            >
+              ● Open to Work
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card shadow-sm h-100 project-card border-0">
-              <img src="assets/img/chat.png" class="card-img-top" alt="Chat App">
-              <div class="card-body p-2 p-md-3">
-                <h5 class="card-title text-primary mb-1">Chat App</h5>
-                <p class="card-text small text-muted">Real-time mobile messaging built with <b>React Native</b>.</p>
+          <!-- Right Side: Details -->
+          <div
+            class="profile-info"
+            style="flex: 1.5; min-width: 300px; padding: 3rem"
+          >
+            <h4
+              style="
+                color: var(--accent-cyan);
+                font-family: var(--font-mono);
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: 0.5rem;
+              "
+            >
+              Personal Details
+            </h4>
+            <h2
+              style="text-align: left; margin-bottom: 2rem; font-size: 2.5rem"
+            >
+              Mohamed Maqsood Amanath
+            </h2>
+            <p
+              style="
+                color: var(--text-secondary);
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+                border-left: 3px solid var(--accent-purple);
+                padding-left: 1rem;
+              "
+            >
+              Full Stack Software Engineering Intern
+            </p>
+
+            <div
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem"
+            >
+              <!-- Full Name -->
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <div
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background: rgba(157, 78, 221, 0.1);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--accent-purple);
+                  "
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <p
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--text-muted);
+                      margin: 0;
+                    "
+                  >
+                    Full Name
+                  </p>
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin: 0;
+                    "
+                  >
+                    Amanath Maqsood
+                  </p>
+                </div>
               </div>
+
+              <!-- Degree -->
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <div
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background: rgba(0, 212, 255, 0.1);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--accent-cyan);
+                  "
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--text-muted);
+                      margin: 0;
+                    "
+                  >
+                    Degree
+                  </p>
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin: 0;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    B.Eng (Hons) Software Eng.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <div
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background: rgba(0, 255, 65, 0.1);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--accent-green);
+                  "
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <p
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--text-muted);
+                      margin: 0;
+                    "
+                  >
+                    Email
+                  </p>
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin: 0;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    amanathmaq@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <div
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background: rgba(247, 37, 133, 0.1);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--accent-pink);
+                  "
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <p
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--text-muted);
+                      margin: 0;
+                    "
+                  >
+                    Phone
+                  </p>
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin: 0;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    +94 76 238 3114
+                  </p>
+                </div>
+              </div>
+
+              <!-- City -->
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <div
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background: rgba(255, 107, 53, 0.1);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--accent-orange);
+                  "
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <p
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--text-muted);
+                      margin: 0;
+                    "
+                  >
+                    Location
+                  </p>
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin: 0;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    Colombo, Sri Lanka
+                  </p>
+                </div>
+              </div>
+
+              <!-- University -->
+              <div style="display: flex; align-items: center; gap: 1rem">
+                <div
+                  style="
+                    width: 40px;
+                    height: 40px;
+                    background: rgba(67, 97, 238, 0.1);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--accent-blue);
+                  "
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--text-muted);
+                      margin: 0;
+                    "
+                  >
+                    University
+                  </p>
+                  <p
+                    style="
+                      font-weight: 600;
+                      color: var(--text-primary);
+                      margin: 0;
+                      font-size: 0.9rem;
+                    "
+                  >
+                    Java Institute of Advanced Technology
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Download CV Button -->
+            <!-- Download CV Button (Updated Link) -->
+            <div
+              style="
+                margin-top: 2.5rem;
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+              "
+            >
+              <!-- Button 1: Go to Contact Section -->
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                style="background: var(--gradient-primary); border: none"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  style="margin-right: 8px"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                Contact Me
+              </a>
+
+              <!-- Button 2: Download CV (Keep your PDF link here) -->
+              <a
+                href="#"
+                target="_blank"
+                class="btn btn-outline"
+                style="
+                  border-color: var(--accent-cyan);
+                  color: var(--accent-cyan);
+                "
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  style="margin-right: 8px"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <h2 class="fade-in">Education & Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item fade-in stagger-1">
+            <div class="exp-card glass-panel">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-title">B.Eng (Hons) Software Engineering</h3>
+                  <!-- UPDATED UNIVERSITY NAME -->
+                  <span class="exp-company"
+                    >Studied at JIAT | Awarded by IIC University (UGC
+                    Recognized)</span
+                  >
+                </div>
+                <span class="exp-date">2022 - Present</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>
+                  Specializing in Web Engineering, Database Systems, and
+                  Software Architecture.
+                </li>
+                <li>
+                  Applying academic knowledge to build efficient and scalable
+                  full-stack applications.
+                </li>
+                <li>
+                  Active participant in university tech communities and
+                  hackathons.
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card shadow-sm h-100 project-card border-0">
-              <img src="assets/img/web.png" class="card-img-top" alt="MobileXStore">
-              <div class="card-body p-2 p-md-3">
-                <h5 class="card-title text-primary mb-1">Mobile X Store</h5>
-                <p class="card-text small text-muted">Modern gadget store website using <b>PHP & CSS</b>.</p>
+          <div class="timeline-item fade-in stagger-3">
+            <div class="exp-card glass-panel">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-title">Diploma in MS Office</h3>
+                  <span class="exp-company"
+                    >Balmoral Institute of Information Technology</span
+                  >
+                </div>
+                <span class="exp-date">2025 SEP - 2025 DEC</span>
               </div>
+              <ul class="exp-bullets">
+                <li>
+                  Achieved a perfect score of
+                  <strong style="color: var(--accent-green)">100%</strong> in
+                  the final assessment, demonstrating expert proficiency.
+                </li>
+                <li>
+                  Awarded an official
+                  <strong>Certificate of Completion</strong> for mastering Word,
+                  Excel, PowerPoint, and Outlook.
+                </li>
+                <li>
+                  Developed advanced skills in data analysis, document
+                  formatting, and professional presentation design.
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card shadow-sm h-100 project-card border-0">
-              <img src="assets/img/3d_runner_game.png" class="card-img-top" alt="3D Game">
-              <div class="card-body p-2 p-md-3">
-                <h5 class="card-title text-primary mb-1">3D Runner Game</h5>
-                <p class="card-text small text-muted">Small 3D run game developed in <b>Unity Hub</b>.</p>
+          <div class="timeline-item fade-in stagger-2">
+            <div class="exp-card glass-panel">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-title">Advanced Level (Maths Stream)</h3>
+                  <span class="exp-company">Uva College</span>
+                </div>
+                <span class="exp-date">2018 - 2020</span>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card shadow-sm h-100 project-card border-0">
-              <img src="assets/img/carwash.png" class="card-img-top" alt="Car Wash">
-              <div class="card-body p-2 p-md-3">
-                <h5 class="card-title text-primary mb-1">Car Wash App</h5>
-                <p class="card-text small text-muted">Android service booking application using <b>Java</b>.</p>
+    <!-- Projects Gallery -->
+    <section id="projects">
+      <div class="container">
+        <!-- Header Section -->
+        <div style="text-align: center; margin-bottom: 4rem">
+          <h2
+            class="fade-in"
+            style="
+              position: relative;
+              display: inline-block;
+              margin-bottom: 1.5rem;
+              font-size: clamp(2rem, 4vw, 3rem);
+            "
+          >
+            Academic Projects
+          </h2>
+          <div
+            class="fade-in stagger-1"
+            style="
+              max-width: 900px;
+              margin: 0 auto;
+              padding: 1.5rem 2rem;
+              background: rgba(255, 255, 255, 0.03);
+              border: 1px solid var(--glass-border);
+              border-radius: 12px;
+              backdrop-filter: blur(10px);
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            "
+          >
+            <p
+              style="
+                margin: 0;
+                color: var(--text-secondary);
+                line-height: 1.7;
+                font-size: 1.05rem;
+              "
+            >
+              A curated showcase of my
+              <strong style="color: var(--accent-cyan)"
+                >full-stack academic portfolio</strong
+              >. These projects demonstrate my ability to architect scalable
+              solutions, design intuitive interfaces, and deploy robust
+              applications using modern web technologies.
+            </p>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- 1. POS System (Theme: Orange/Gold for Enterprise Java) -->
+          <div
+            class="project-card glass-panel scale-in stagger-1"
+            style="
+              --theme-color: #ff6b35;
+              --theme-glow: 0 0 25px rgba(255, 107, 53, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #ff6b35, #f72585)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
               </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #ff6b35, #f72585);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              POS System (Stationery)
+            </h3>
+            <p class="project-desc">
+              A comprehensive retail management solution for sales transactions
+              and inventory tracking. Implemented product management, stock
+              monitoring, billing, and automated reporting features.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #ff6b35; color: #ff6b35">Java</span>
+              <span style="border-color: #ff6b35; color: #ff6b35">MySQL</span>
+              <span style="border-color: #ff6b35; color: #ff6b35">Jasper</span>
+              <span style="border-color: #ff6b35; color: #ff6b35">Swing</span>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card shadow-sm h-100 project-card border-0">
-              <img src="assets/img/pos_system.png" class="card-img-top" alt="POS System">
-              <div class="card-body p-2 p-md-3">
-                <h5 class="card-title text-primary mb-1">Comm. Store POS</h5>
-                <p class="card-text small text-muted">Complete retail management solution using <b>Java</b>.</p>
+          <!-- 2. Note App (Theme: Cyan/Blue for React Native) -->
+          <div
+            class="project-card glass-panel scale-in stagger-2"
+            style="
+              --theme-color: #00d4ff;
+              --theme-glow: 0 0 25px rgba(0, 212, 255, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #00d4ff, #4361ee)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
               </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+                <!-- <a href="#" aria-label="Demo"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                ></a> -->
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #00d4ff, #4361ee);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              Note Management App
+            </h3>
+            <p class="project-desc">
+              A cross-platform mobile application for secure note taking.
+              Features full CRUD functionality, cloud synchronization, and an
+              intuitive user interface built with React Native.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #00d4ff; color: #00d4ff"
+                >React Native</span
+              >
+              <span style="border-color: #00d4ff; color: #00d4ff">JS</span>
+              <span style="border-color: #00d4ff; color: #00d4ff">PHP</span>
+              <span style="border-color: #00d4ff; color: #00d4ff">CSS</span>
             </div>
           </div>
 
-          <div class="col-6 col-md-4 col-lg-3">
-            <div class="card shadow-sm h-100 project-card border-0">
-              <img src="assets/img/game.png" class="card-img-top" alt="2D Game">
-              <div class="card-body p-2 p-md-3">
-                <h5 class="card-title text-primary mb-1">JavaScript 2D Game</h5>
-                <p class="card-text small text-muted">Interactive browser game using <b>JS</b>.</p>
+          <!-- 3. Chat App (Theme: Purple/Pink for Real-time) -->
+          <div
+            class="project-card glass-panel scale-in stagger-3"
+            style="
+              --theme-color: #9d4edd;
+              --theme-glow: 0 0 25px rgba(157, 78, 221, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #9d4edd, #f72585)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
               </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #9d4edd, #f72585);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              Real-Time Chat App
+            </h3>
+            <p class="project-desc">
+              Engineered a real-time messaging application enabling instant
+              communication. Features dynamic message updates, user presence
+              indicators, and seamless mobile responsiveness.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #9d4edd; color: #9d4edd"
+                >React Native</span
+              >
+              <span style="border-color: #9d4edd; color: #9d4edd">JS</span>
+              <span style="border-color: #9d4edd; color: #9d4edd">CSS</span>
             </div>
           </div>
 
+          <!-- 4. Car Wash (Theme: Green/Emerald for Service/Firebase) -->
+          <div
+            class="project-card glass-panel scale-in stagger-1"
+            style="
+              --theme-color: #00ff41;
+              --theme-glow: 0 0 25px rgba(0, 255, 65, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #00ff41, #00d4ff)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+                <!-- <a href="#" aria-label="Demo"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                ></a> -->
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #00ff41, #00d4ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              Car Wash Booking App
+            </h3>
+            <p class="project-desc">
+              A dual-platform solution featuring a customer-facing mobile app
+              for service booking and a React.js admin dashboard. Implemented
+              Firebase real-time database for efficient appointment workflows.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #00ff41; color: #00ff41"
+                >React Native</span
+              >
+              <span style="border-color: #00ff41; color: #00ff41"
+                >Firebase</span
+              >
+              <span style="border-color: #00ff41; color: #00ff41">React</span>
+              <span style="border-color: #00ff41; color: #00ff41">Node</span>
+            </div>
+          </div>
+
+          <!-- 5. Enterprise Sys (Theme: Red/Rose for Critical Systems) -->
+          <div
+            class="project-card glass-panel scale-in stagger-2"
+            style="
+              --theme-color: #f72585;
+              --theme-glow: 0 0 25px rgba(247, 37, 133, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #f72585, #9d4edd)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #f72585, #9d4edd);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              Enterprise Mgmt Sys
+            </h3>
+            <p class="project-desc">
+              Engineered enterprise management solutions for both retail
+              (Textile) and hospital administration. Integrated Jasper Reports
+              for automated billing, invoice generation, and detailed analytics.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #f72585; color: #f72585">Java</span>
+              <span style="border-color: #f72585; color: #f72585">MySQL</span>
+              <span style="border-color: #f72585; color: #f72585">Jasper</span>
+              <span style="border-color: #f72585; color: #f72585">Swing</span>
+            </div>
+          </div>
+
+          <!-- 6. E-Commerce (Theme: Blue/Indigo for Web) -->
+          <div
+            class="project-card glass-panel scale-in stagger-3"
+            style="
+              --theme-color: #4361ee;
+              --theme-glow: 0 0 25px rgba(67, 97, 238, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #4361ee, #00d4ff)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+                <!-- <a href="#" aria-label="Demo"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                ></a> -->
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #4361ee, #00d4ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              E-Commerce Platform
+            </h3>
+            <p class="project-desc">
+              A robust Java EE-based e-commerce platform enabling seamless
+              product discovery and secure checkout. Engineered with
+              JSP/Servlets, featuring a persistent shopping cart and role-based
+              authentication.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #4361ee; color: #4361ee">Java EE</span>
+              <span style="border-color: #4361ee; color: #4361ee">JSP</span>
+              <span style="border-color: #4361ee; color: #4361ee">MySQL</span>
+              <span style="border-color: #4361ee; color: #4361ee"
+                >Hibernate</span
+              >
+            </div>
+          </div>
+
+          <!-- 7. 3D Game (Theme: Yellow/Orange for Unity) -->
+          <div
+            class="project-card glass-panel scale-in stagger-1"
+            style="
+              --theme-color: #ffbd2e;
+              --theme-glow: 0 0 25px rgba(255, 189, 46, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #ffbd2e, #ff6b35)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #ffbd2e, #ff6b35);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              3D Runner Game
+            </h3>
+            <p class="project-desc">
+              An immersive 3D endless runner game developed in Unity. Features
+              dynamic obstacle generation, score tracking, and smooth
+              physics-based character movement.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #ffbd2e; color: #ffbd2e">Unity</span>
+              <span style="border-color: #ffbd2e; color: #ffbd2e">C#</span>
+              <span style="border-color: #ffbd2e; color: #ffbd2e">Blender</span>
+              <span style="border-color: #ffbd2e; color: #ffbd2e">3D</span>
+            </div>
+          </div>
+
+          <!-- 8. 2D Game (Theme: Green/Lime for JS Canvas) -->
+          <div
+            class="project-card glass-panel scale-in stagger-2"
+            style="
+              --theme-color: #00ff41;
+              --theme-glow: 0 0 25px rgba(0, 255, 65, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #00ff41, #9d4edd)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg
+                ></a>
+                <!-- <a href="#" aria-label="Demo"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line></svg
+                ></a> -->
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #00ff41, #9d4edd);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              JS 2D Browser Game
+            </h3>
+            <p class="project-desc">
+              An interactive 2D arcade game running directly in the browser.
+              Built using vanilla JavaScript and HTML5 Canvas, featuring
+              collision detection, score systems, and responsive controls.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #00ff41; color: #00ff41"
+                >JavaScript</span
+              >
+              <span style="border-color: #00ff41; color: #00ff41">HTML5</span>
+              <span style="border-color: #00ff41; color: #00ff41">Canvas</span>
+              <span style="border-color: #00ff41; color: #00ff41">CSS3</span>
+            </div>
+          </div>
+          <!-- 6. E-Commerce Web Application (Java EE) -->
+          <div
+            class="project-card glass-panel scale-in stagger-3"
+            style="
+              --theme-color: #4361ee;
+              --theme-glow: 0 0 25px rgba(67, 97, 238, 0.4);
+            "
+          >
+            <div class="project-header">
+              <div
+                class="folder-icon"
+                style="background: linear-gradient(135deg, #4361ee, #00d4ff)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  />
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="GitHub Repository">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <!-- <a href="#" aria-label="Live Demo">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a> -->
+              </div>
+            </div>
+            <h3
+              class="project-title"
+              style="
+                background: linear-gradient(to right, #4361ee, #00d4ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              E-Commerce Web App
+            </h3>
+            <p class="project-desc">
+              A robust Java EE-based e-commerce platform enabling seamless
+              product discovery and secure checkout. Engineered with
+              JSP/Servlets for dynamic content, featuring a persistent shopping
+              cart, role-based user authentication, and integrated payment
+              logic.
+            </p>
+            <div class="project-tech">
+              <span style="border-color: #4361ee; color: #4361ee">Java EE</span>
+              <span style="border-color: #4361ee; color: #4361ee"
+                >JSP & Servlets</span
+              >
+              <span style="border-color: #4361ee; color: #4361ee"
+                >JSTL & EL</span
+              >
+              <span style="border-color: #4361ee; color: #4361ee">MySQL</span>
+              <span style="border-color: #4361ee; color: #4361ee"
+                >Hibernate</span
+              >
+              <span style="border-color: #4361ee; color: #4361ee"
+                >HTML5/CSS3</span
+              >
+              <span style="border-color: #4361ee; color: #4361ee"
+                >JavaScript</span
+              >
+              <span style="border-color: #4361ee; color: #4361ee"
+                >NetBeans</span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services section pt-5 pb-3">
-
-      <div class="container section-title pb-3" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Offering comprehensive services tailored to bring complex digital products to life, from initial concept
-          and design to deployment and optimization.</p>
-      </div>
+    <section id="services">
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item item-cyan position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                  </path>
-                </svg>
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Full Stack Development</h3>
-              </a>
-              <p>End-to-end development of dynamic and scalable web applications using modern frameworks. Focus on clean
-                architecture and timely delivery.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
-                  </path>
-                </svg>
-                <i class="bi bi-server"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Database Management & Backend Development</h3>
-              </a>
-              <p>Design and implement highly scalable, secure, and maintainable data structures and backend logic.
-                Expertise in database optimization (SQL/NoSQL) and efficient data handling for web applications.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item item-teal position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
-                  </path>
-                </svg>
-                <i class="bi bi-palette"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Frontend & UI/UX Development</h3>
-              </a>
-              <p>Crafting engaging, responsive, and accessible user interfaces using React, JavaScript, and HTML/CSS.
-                Dedicated to optimizing performance and ensuring excellent user experience.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
-                  </path>
-                </svg>
-                <i class="bi bi-check2-circle"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Testing & Quality Assurance</h3>
-              </a>
-              <p>Implementing unit, integration, and end-to-end testing to ensure code reliability and minimize bugs.
-                Committed to debugging, documenting code, and delivering high-quality, stable features.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item item-orange position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,503.46388370962813C374.79870501325706,506.7187171631273,450.30338084848347,517.4037466674912,507.5401099417272,469.1360311096063C564.7646505358123,420.84554820484876,545.961380433386,324.39375891483056,527.5637851860013,247.0513326148842C508.3916203130437,172.5537304148292,504.227403450369,90.04454013838521,440.4490860221391,48.484765123956734C379.14783315479204,8.488075924903654,295.7583554528137,-0.31779298369484126,221.50616125332612,31.62727239659521C141.5605214743179,66.14798669962313,105.76232783929936,163.50153648901882,105.04403938584285,250.29854589048427C104.3614381969125,332.8049051531754,120.69413413898693,414.7049908158489,176.2088055178758,475.58352562901424C227.78770531685853,532.0185511744216,300,503.46388370962813,300,503.46388370962813">
-                  </path>
-                </svg>
-                <i class="bi bi-hdd-stack"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Backend & API Development</h3>
-              </a>
-              <p>Building secure, scalable server-side logic and RESTful APIs using Java, PHP, and Python. Specialized
-                in database management with MySQL and MongoDB to ensure data integrity and high performance.</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item item-pink position-relative">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
-                  </path>
-                </svg>
-                <i class="bi bi-shield-lock"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Maintenance & Security</h3>
-              </a>
-              <p>Ongoing application maintenance, performance monitoring, bug fixes, and implementing robust security
-                practices to protect data and user privacy.</p>
-            </div>
-          </div>
+        <!-- Section Header -->
+        <div
+          class="services-header fade-in"
+          style="text-align: center; margin-bottom: 4rem"
+        >
+          <h2
+            style="
+              position: relative;
+              display: inline-block;
+              margin-bottom: 1rem;
+            "
+          >
+            My Services
+            <!-- <span
+              style="
+                content: &quot;&quot;;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 4px;
+                background: var(--gradient-primary);
+                border-radius: 2px;
+              "
+            ></span> -->
+          </h2>
+          <p
+            style="
+              max-width: 800px;
+              margin: 0 auto;
+              margin-top: 10px;
+              color: var(--text-secondary);
+              line-height: 1.6;
+            "
+          >
+            Offering comprehensive solutions tailored to bring digital products
+            to life. From concept and design to deployment and optimization, I
+            ensure clean code and scalable architecture.
+          </p>
         </div>
 
+        <!-- Services Grid -->
+        <div class="services-grid">
+          <!-- 1. Full Stack Development -->
+          <div class="service-card glass-panel scale-in stagger-1">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #4361ee, #00d4ff)"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"></path>
+              </svg>
+            </div>
+            <h3>Full Stack Development</h3>
+            <p>
+              End-to-end development of dynamic web applications. I bridge the
+              gap between front-end interactivity and back-end robustness using
+              modern stacks like MERN and Java EE.
+            </p>
+            <ul class="service-list">
+              <li><span class="dot"></span> Scalable Architecture</li>
+              <li><span class="dot"></span> RESTful API Integration</li>
+              <li><span class="dot"></span> Cloud Deployment</li>
+            </ul>
+          </div>
+
+          <!-- 2. Frontend & UI/UX -->
+          <div class="service-card glass-panel scale-in stagger-2">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #f72585, #9d4edd)"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Frontend & UI/UX</h3>
+            <p>
+              Crafting responsive, accessible, and visually stunning user
+              interfaces. Focused on performance optimization and seamless user
+              experiences across all devices.
+            </p>
+            <ul class="service-list">
+              <li><span class="dot"></span> React & React Native</li>
+              <li><span class="dot"></span> Responsive Design</li>
+              <li><span class="dot"></span> Interactive Animations</li>
+            </ul>
+          </div>
+
+          <!-- 3. Backend & Database -->
+          <div class="service-card glass-panel scale-in stagger-3">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #00ff41, #00d4ff)"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h3>Backend & Database</h3>
+            <p>
+              Designing secure server-side logic and efficient data structures.
+              Expertise in managing complex databases and ensuring data
+              integrity for high-traffic applications.
+            </p>
+            <ul class="service-list">
+              <li><span class="dot"></span> Node.js & Java Spring</li>
+              <li><span class="dot"></span> MySQL & MongoDB</li>
+              <li><span class="dot"></span> Authentication & Security</li>
+            </ul>
+          </div>
+
+          <!-- 4. Code Quality & Testing -->
+          <div class="service-card glass-panel scale-in stagger-1">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #ffbd2e, #ff6b35)"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3>Testing & Optimization</h3>
+            <p>
+              Ensuring reliability through rigorous testing and debugging. I
+              focus on writing clean, maintainable code and optimizing
+              performance for speed and stability.
+            </p>
+            <ul class="service-list">
+              <li><span class="dot"></span> Unit & Integration Testing</li>
+              <li><span class="dot"></span> Bug Fixing & Debugging</li>
+              <li><span class="dot"></span> Performance Tuning</li>
+            </ul>
+          </div>
+
+          <!-- 5. Academic & Technical Consulting -->
+          <div class="service-card glass-panel scale-in stagger-2">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #00adb5, #00d4ff)"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3>Technical Consulting</h3>
+            <p>
+              Leveraging academic expertise to solve complex algorithmic
+              problems. Available for project collaboration, code reviews, and
+              technical documentation.
+            </p>
+            <ul class="service-list">
+              <li><span class="dot"></span> Project Collaboration</li>
+              <li><span class="dot"></span> Code Reviews</li>
+              <li><span class="dot"></span> Documentation</li>
+            </ul>
+          </div>
+
+          <!-- 6. Maintenance & Support -->
+          <div class="service-card glass-panel scale-in stagger-3">
+            <div
+              class="service-icon"
+              style="background: linear-gradient(135deg, #9d4edd, #f72585)"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Maintenance & Support</h3>
+            <p>
+              Providing ongoing support to keep applications running smoothly.
+              Includes regular updates, security patches, and feature
+              enhancements post-deployment.
+            </p>
+            <ul class="service-list">
+              <li><span class="dot"></span> Security Patches</li>
+              <li><span class="dot"></span> Feature Updates</li>
+              <li><span class="dot"></span> 24/7 Monitoring</li>
+            </ul>
+          </div>
+        </div>
       </div>
-
     </section>
-    <!-- Services Section -->
 
+    <!-- Contact US-->
     <!-- Contact Section -->
-    <section id="contact" class="contact section pt-5 pb-3">
-
-      <!-- Section Title -->
-      <div class="container section-title pb-3" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>I am always open to new opportunities, collaborations, and discussions regarding full stack development. 
-          If you'd like to learn more about my background, feel free to request my CV via email. Please reach out 
-          through my professional channels for project inquiries or employment opportunities.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0 mt-1"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Vauxhall Street, Colombo 02</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0 mt-1"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>076 2383114</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0 mt-1"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>amanathmaq@gmail.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
-              <input type="hidden" name="access_key" value="c0a337f3-6645-4cd1-9c83-bd7a6ec1fe96">
-
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-                </div>
-                <div class="col-md-12">
-                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                </div>
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <button type="submit" id="submit-btn" class="btn btn-primary">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container pt-5 pb-3">
-      <h3 class="sitename">Amanath Maqsood</h3>
-      <p>B.Eng. (Hons) | Full Stack Software Engineer. Transforming complex ideas into simple, powerful, and
-        user-friendly applications.
-      </p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.facebook.com/amanath.maq/"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/a_m_a_n_a_t_h_maq/"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/m-m-amanath-b7516030a"><i class="bi bi-linkedin"></i></a>
-
-      </div>
+    <section id="contact">
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">AmanMaq</strong><span>All Rights Reserved</span>
+        <h2 class="fade-in">Get In Touch</h2>
+
+        <div class="contact-content glass-panel scale-in" style="padding: 3rem">
+          <p
+            style="
+              text-align: center;
+              margin-bottom: 2rem;
+              color: var(--text-secondary);
+              font-size: 1.1rem;
+            "
+          >
+            I am currently looking for
+            <strong>Internship Opportunities</strong> or Junior Developer roles.
+            Whether you want to discuss a project, offer mentorship, or just say
+            hi, my inbox is always open.
+          </p>
+
+          <!-- Contact Form -->
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            id="contact-form"
+          >
+            <!-- Hidden Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="c0a337f3-6645-4cd1-9c83-bd7a6ec1fe96"
+            />
+            <input type="hidden" name="subject" value="New Portfolio Inquiry" />
+
+            <div class="form-grid">
+              <!-- Name: Letters only, min 2 chars -->
+              <div class="form-col">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your Name"
+                  required
+                  minlength="2"
+                  pattern="[A-Za-z\s]+"
+                  autocomplete="name"
+                />
+              </div>
+
+              <!-- Email: Strict email type -->
+              <div class="form-col">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Your Email"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <!-- Subject: Min length handled in JS, but added maxlength for safety -->
+              <div class="form-col-full">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-input"
+                  placeholder="Subject"
+                  required
+                  minlength="5"
+                  maxlength="100"
+                  autocomplete="off"
+                />
+              </div>
+
+              <!-- Message: Min/Max length -->
+              <div class="form-col-full">
+                <textarea
+                  class="form-input"
+                  name="message"
+                  rows="6"
+                  placeholder="Message"
+                  required
+                  minlength="10"
+                  maxlength="2000"
+                ></textarea>
+              </div>
+
+              <div class="form-col-full text-center">
+                <button
+                  type="submit"
+                  id="submit-btn"
+                  class="btn btn-primary"
+                  style="margin-top: 1rem"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Social Links -->
+          <div
+            class="social-links"
+            style="
+              margin-top: 3rem;
+              display: flex;
+              justify-content: center;
+              gap: 2rem;
+              flex-wrap: wrap;
+            "
+          >
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/amanathmaqsood"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
+            </a>
+            <a href="mailto:amanathmaq@example.com" class="social-link">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Email
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <!-- SweetAlert2 Library (Required for the popup) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Contact US-->
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <footer>
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Developed by
+          <span style="color: var(--accent-cyan)">AmanMaq</span>
+        </p>
+      </div>
+    </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
 </html>
